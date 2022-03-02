@@ -22,7 +22,7 @@ class RecordDiskMetricsCommandTest extends TestCase
         ->assertExitCode(RecordDiskMetricsCommand::SUCCESS);
         $last = DiskMonitorEntry::last();
         $this->assertEquals(0, $last->file_count);
-        
+
         Storage::disk('local')->put('test.txt', 'test');
         $this
         ->artisan(RecordDiskMetricsCommand::class)
