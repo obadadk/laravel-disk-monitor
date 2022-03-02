@@ -2,9 +2,9 @@
 
 namespace Obadadk\DiskMonitor;
 
+use Obadadk\DiskMonitor\Commands\DiskMonitorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Obadadk\DiskMonitor\Commands\DiskMonitorCommand;
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {
