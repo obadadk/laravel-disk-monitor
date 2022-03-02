@@ -1,5 +1,8 @@
 <?php
-// config for Obadadk/DiskMonitor
-return [
 
+return [
+    /**
+     * The name of the disk you want to monitor
+     */
+    'disk_name' => 'locale',
 ];
