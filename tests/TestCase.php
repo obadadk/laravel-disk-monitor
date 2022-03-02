@@ -3,8 +3,8 @@
 namespace Obadadk\DiskMonitor\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Obadadk\DiskMonitor\DiskMonitorServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
