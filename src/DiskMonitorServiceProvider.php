@@ -2,7 +2,7 @@
 
 namespace Obadadk\DiskMonitor;
 
-use Obadadk\DiskMonitor\Commands\DiskMonitorCommand;
+use Obadadk\DiskMonitor\Commands\RecordDiskMetricsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -20,6 +20,6 @@ class DiskMonitorServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_laravel-disk-monitor_table')
-            ->hasCommand(DiskMonitorCommand::class);
+            ->hasCommand(RecordDiskMetricsCommand::class);
     }
 }
